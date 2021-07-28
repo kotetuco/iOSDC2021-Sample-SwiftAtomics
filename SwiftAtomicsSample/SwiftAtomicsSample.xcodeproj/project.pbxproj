@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		9CA6E47626B13CAE00AB955B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6E47426B13CAE00AB955B /* LaunchScreen.storyboard */; };
 		9CA6E48126B13CAF00AB955B /* SwiftAtomicsSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6E48026B13CAF00AB955B /* SwiftAtomicsSampleTests.swift */; };
 		9CA6E48C26B13CAF00AB955B /* SwiftAtomicsSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6E48B26B13CAF00AB955B /* SwiftAtomicsSampleUITests.swift */; };
+		9CA6E49A26B13DAD00AB955B /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6E49926B13DAD00AB955B /* Counter.swift */; };
+		9CA6E49D26B13DDC00AB955B /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = 9CA6E49C26B13DDC00AB955B /* Atomics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		9CA6E48726B13CAF00AB955B /* SwiftAtomicsSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAtomicsSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6E48B26B13CAF00AB955B /* SwiftAtomicsSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAtomicsSampleUITests.swift; sourceTree = "<group>"; };
 		9CA6E48D26B13CAF00AB955B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA6E49926B13DAD00AB955B /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA6E49D26B13DDC00AB955B /* Atomics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 				9CA6E46926B13CAA00AB955B /* AppDelegate.swift */,
 				9CA6E46B26B13CAA00AB955B /* SceneDelegate.swift */,
 				9CA6E46D26B13CAA00AB955B /* ViewController.swift */,
+				9CA6E49926B13DAD00AB955B /* Counter.swift */,
 				9CA6E46F26B13CAA00AB955B /* Main.storyboard */,
 				9CA6E47226B13CAE00AB955B /* Assets.xcassets */,
 				9CA6E47426B13CAE00AB955B /* LaunchScreen.storyboard */,
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = SwiftAtomicsSample;
+			packageProductDependencies = (
+				9CA6E49C26B13DDC00AB955B /* Atomics */,
+			);
 			productName = SwiftAtomicsSample;
 			productReference = 9CA6E46626B13CAA00AB955B /* SwiftAtomicsSample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 9CA6E45D26B13CA900AB955B;
+			packageReferences = (
+				9CA6E49B26B13DDC00AB955B /* XCRemoteSwiftPackageReference "swift-atomics" */,
+			);
 			productRefGroup = 9CA6E46726B13CAA00AB955B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA6E49A26B13DAD00AB955B /* Counter.swift in Sources */,
 				9CA6E46E26B13CAA00AB955B /* ViewController.swift in Sources */,
 				9CA6E46A26B13CAA00AB955B /* AppDelegate.swift in Sources */,
 				9CA6E46C26B13CAA00AB955B /* SceneDelegate.swift in Sources */,
@@ -593,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9CA6E49B26B13DDC00AB955B /* XCRemoteSwiftPackageReference "swift-atomics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-atomics";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9CA6E49C26B13DDC00AB955B /* Atomics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CA6E49B26B13DDC00AB955B /* XCRemoteSwiftPackageReference "swift-atomics" */;
+			productName = Atomics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CA6E45E26B13CA900AB955B /* Project object */;
 }
