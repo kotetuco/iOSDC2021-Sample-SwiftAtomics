@@ -52,6 +52,7 @@
 		9CA6E48B26B13CAF00AB955B /* SwiftAtomicsSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAtomicsSampleUITests.swift; sourceTree = "<group>"; };
 		9CA6E48D26B13CAF00AB955B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA6E49926B13DAD00AB955B /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		9CA6E49E26B140CE00AB955B /* SwiftAtomicsSample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftAtomicsSample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		9CA6E45D26B13CA900AB955B = {
 			isa = PBXGroup;
 			children = (
+				9CA6E49E26B140CE00AB955B /* SwiftAtomicsSample.playground */,
 				9CA6E46826B13CAA00AB955B /* SwiftAtomicsSample */,
 				9CA6E47F26B13CAF00AB955B /* SwiftAtomicsSampleTests */,
 				9CA6E48A26B13CAF00AB955B /* SwiftAtomicsSampleUITests */,
